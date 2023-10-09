@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>EcoFragger</title>
+        <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Martian+Mono&family=Monomaniac+One&family=Poppins&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Kanit:wght@300&family=Martian+Mono&family=Monomaniac+One&family=Poppins&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="background/logo.png">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            var currentTime = new Date().getHours();
+            if (document.body) {
+                if (7 <= currentTime && currentTime < 20) {
+                    document.body.background = "background/bg.png";
+                }
+                else {
+                    document.body.background = "background/nightbg.png";
+                }
+            }
+            </script>
+        <div class="rectangle">
+            <div>
+                <a class="centered" href="index.html">SeAw</a>
+            </div>
+             <div>
+                <a class="aq" href="air-quality.html">AIRQUALITY</a>
+            </div>
+            <div>
+                <a class="about" href="about.html">FORECAST</a>
+            </div>
+            <div>
+                <a class="news" href="news.html">NEWS</a>
+            </div>
+            <div>
+                <a class="inf" href="inf.html"><ion-icon name="information-circle"></ion-icon> </a>
+            </div>
+            <img src="background/logo.png" alt="" class="logo">
+  </body>
+</html>

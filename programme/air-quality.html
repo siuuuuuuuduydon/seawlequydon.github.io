@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+    <head>
+        <title>EcoFragger</title>
+        <link rel="stylesheet" href="style.css">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Martian+Mono&family=Monomaniac+One&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="background/logo.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Martian+Mono&family=Monomaniac+One&family=Poppins&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@700&family=Kanit:wght@300&family=Martian+Mono&family=Monomaniac+One&family=Poppins&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <div class="rectangle">
+            <div>
+                <a class="centered" href="index.html">SeAw</a>
+            </div>
+             <div>
+                <a class="aq" href="air-quality.html">AIRQUALITY</a>
+            </div>
+            <div>
+                <a class="about" href="about.html">FORECAST</a>
+            </div>
+            <img src="background/logo.png" alt="" class="logo">
+      </div>
+            <div>
+                <a class="news" href="news.html">NEWS</a>
+            </div>
+            <div>
+                <a class="inf" href="inf.html"><ion-icon name="information-circle"></ion-icon> </a>
+            </div>
+    <div name="airvisual_widget" key="650a4be94cecf1ee99da6ee5" align="center" style="padding-top:50px;"></div>
+    <script type="text/javascript" src="https://widget.iqair.com/script/widget_v3.0.js"></script>
+      <div id="map" style="height:380px; width: 580px; margin-left: auto; margin-right: auto; margin-bottom: auto; border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,.2);"/>  
+      <script  src="https://maps.googleapis.com/maps/api/js"></script>  
+  
+      <script>  
+            var  map  =  new  google.maps.Map(document.getElementById('map'),  {  
+                        center:  new  google.maps.LatLng(16.117520748094595, 107.53198004717872),  
+                        mapTypeId:  google.maps.MapTypeId.ROADMAP,  
+                        zoom:  5
+                    });  
+        
+                                    var  t  =  new  Date().getTime();  
+            var  waqiMapOverlay  =  new  google.maps.ImageMapType({  
+                        getTileUrl:  function(coord,  zoom)  {  
+                                  return  'https://tiles.aqicn.org/tiles/usepa-aqi/'  +  zoom  +  "/"  +  coord.x  +  "/"  +  coord.y  +  ".png?token=_TOKEN_ID_";  
+                        },  
+                        name:  "Air  Quality",  
+              });  
+        
+            map.overlayMapTypes.insertAt(0,waqiMapOverlay);  
+      </script>
+    </body>
+</html>

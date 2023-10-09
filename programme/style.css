@@ -1,0 +1,154 @@
+
+body {
+  margin: 0px;
+  background: url("background/bg.png") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
+.rectangle {
+    height: 75px;
+    top:50%;
+    width: 100%;
+    background-image: linear-gradient(to right top, #17ea6b, #03e574, #00df7c, #00da83, #00d489, #00cf8e, #00c993, #00c496, #00be9a, #00b89d, #00b19e, #00ab9f);
+    /*border-radius: 0px 0px 15px 15px;*/
+    border-width: 5px;
+    /*border-bottom: 1px solid black;*/
+    padding: 8px;
+  }
+
+.logo{
+    height: 75px;
+    width: 75px;
+    padding-left: 25px;
+}
+.centered {
+    /*-webkit-text-stroke: 1px white;*/
+    position: absolute;
+    top: 7%;
+    left: 12%;
+    margin-left:15px;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+font-family: 'Inria Sans', sans-serif;
+font-family: 'Kanit', sans-serif;
+font-family: 'Martian Mono', monospace;
+font-family: 'Monomaniac One', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+    font-style: bold;
+    -webkit-text-stroke: 4px #1C7947;
+    color:#03C988;
+    /*text-shadow: 5px 5px 10px #D2E0FB, -5px -5px 10px #D2E0FB;*/
+  }
+.about{
+  -webkit-text-stroke: 2px #13005A;
+  position: absolute;
+  top: 7%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: 'Martian Mono', monospace;
+  font-family: 'Monomaniac One', sans-serif;
+  font-family: 'Rubik Mono One', sans-serif;
+  color:#279EFF;
+    
+}
+.about:hover{
+  color:#9EDDFF;
+}
+
+.inf {
+    /*-webkit-text-stroke: 1px white;*/
+    position: absolute;
+    top: 7%;
+    /*padding-left: 50px;*/
+    left:95%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 50px;
+    -webkit-text-stroke: 1px white;
+    color: #0E185F;
+    /*text-shadow: 5px 5px 10px #D2E0FB, -5px -5px 10px #D2E0FB;*/
+  }
+  
+.inf:hover{
+    color:#006A71;
+}
+.news{
+  -webkit-text-stroke: 2px #13005A;
+  position: absolute;
+  top: 7%;
+ /* padding-left:50px;*/
+  left: 70%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: 'Martian Mono', monospace;
+font-family: 'Monomaniac One', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+  color:#279EFF;
+}
+
+.news:hover{
+  color:#9EDDFF;
+}
+.avwidget{
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.aq{
+  -webkit-text-stroke: 2px #13005A;
+  position: absolute;
+  top: 7%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  font-size: 25px;
+  font-family: 'Martian Mono', monospace;
+font-family: 'Monomaniac One', sans-serif;
+font-family: 'Rubik Mono One', sans-serif;
+  color:#279EFF;
+}
+.aq:hover{
+  color:#9EDDFF;
+}
+
+
+.feed{
+  height: 100%;
+  width: 100%;
+}
+.airvisual_widget{
+  padding-top:50px;
+}
+footer .map{
+  align-items: center;
+}
+.weatherwidget-io{
+  margin-top: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.windmap{
+
+  margin-left: auto;
+  margin-right: auto;
+}
+.information-panel{
+  background: rgba(0,0,0,.7);
+  border:none;
+  outline:none;
+  border-radius:20px;
+  border: 3px white dashed;
+  display: block;
+  width:400px;
+  margin-top:10%;
+  margin-left:auto;
+  margin-right:auto;
+}
